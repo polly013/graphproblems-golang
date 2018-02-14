@@ -58,7 +58,7 @@ func dfs (currNode int) {
     }
 
     for i := 0; i < len(AdjacencyList[currNode]); i++ {
-        neighbourNode := AdjacencyList[currNode][i];
+        neighbourNode := AdjacencyList[currNode][i]
 
         if usedNodes[neighbourNode] == false && CurrentFlow[currNode][neighbourNode] < Capacity[currNode][neighbourNode]{
             usedNodes[neighbourNode] = true
@@ -86,7 +86,7 @@ func readGraph (){
     }
 
     fmt.Printf ("Which vertex is the Source?\n")
-    fmt.Scanf ("%d", &SourceNode);
+    fmt.Scanf ("%d", &SourceNode)
 
     fmt.Printf ("Which vertex is the Target?\n")
     fmt.Scanf ("%d", &TargetNode)
